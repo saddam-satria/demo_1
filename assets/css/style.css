@@ -68,7 +68,7 @@ p
 }
 
 .feature .content span {
-    font-size: 3em;
+    font-size: 4em;
     padding: 15px;
     text-align: center;
     padding-bottom: 0px;
@@ -101,11 +101,6 @@ p
     .feature .content {
         width: 95%;
     }
-    .feature {
-        display: flex;
-        justify-content: flex-start;
-    }
-
     .feature .content span{
         text-align: start;
     }
