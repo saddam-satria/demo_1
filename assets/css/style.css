@@ -6,11 +6,16 @@
 
 body
 {
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(243, 242, 247);
 }
 p
 {
     text-align: justify;
+}
+
+h1,h2,h3,h4,h5
+{
+    text-transform: capitalize;
 }
 .navbar{
     background-color: rgb(255, 255, 255);
@@ -58,6 +63,9 @@ p
     text-transform: uppercase;
 }
 
+/* End Header Content */
+
+
 .feature {
     display: flex;
     justify-content: center;
@@ -82,8 +90,58 @@ p
     border: 1px solid transparent;
     border-radius: 5px;
 }
-/* End Header Content */
-@media screen and (max-width: 760px) {
+/* End Feature Content */
+
+
+
+.projects{
+    margin-top: 4rem;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects h3{
+    padding-top: 5rem;
+}
+
+.carousel-cell 
+{
+    width: 40%;
+
+}
+.carousel 
+{
+    margin-bottom: 15rem;
+}
+.carousel-cell::before
+{
+    display: block;
+}
+
+/* End Projects Content */
+
+.team {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team h3 
+{
+    text-transform: capitalize;
+    margin: 2rem 0px;
+}
+.team h4 
+
+{
+    font-weight: bold;
+}
+
+
+/* End Team Content */
+@media screen and (max-width: 1024px) {
     .content-2{
         order: 1;
     }
@@ -110,10 +168,9 @@ p
     .feature .content .card{
         margin-bottom: 1rem;
     }
-    .feature .content h3
+    .feature .content div
     {   
-        text-align: center;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
     .feature .content h2{
         text-align: center;
@@ -121,5 +178,8 @@ p
     .feature .content p {
         text-align: center;
     }
-    
+    .carousel
+    {
+        margin-bottom: 10rem;
+    }
 }
