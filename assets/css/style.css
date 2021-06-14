@@ -4,186 +4,216 @@
   box-sizing: border-box;
 }
 
-body
-{
-    background-color: rgb(243, 242, 247);
+body {
+  background-color: rgb(243, 242, 247);
 }
-p
-{
-    text-align: justify;
+p {
+  text-align: justify;
 }
 
-h1,h2,h3,h4,h5
-{
-    text-transform: capitalize;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: capitalize;
 }
-.navbar{
-    background-color: rgb(255, 255, 255);
+.navbar {
+  background-color: rgb(255, 255, 255);
 }
-.navbar-brand{
-    color: rgb(34, 33, 33);
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    letter-spacing: 1px;
+.navbar-brand {
+  color: rgb(34, 33, 33);
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
-.navbar-brand:hover{
-    color: rgb(34, 33, 33);
+.navbar-brand:hover {
+  color: rgb(34, 33, 33);
 }
-.nav-link{
-    color: rgb(46, 2, 82);
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
+.nav-link {
+  color: rgb(46, 2, 82);
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
-.nav-link:hover{
-    color: rgb(147, 56, 207);
+.nav-link:hover {
+  color: rgb(147, 56, 207);
 }
-.hamburger{
-    color: rgb(46, 2, 82);
+.hamburger {
+  color: rgb(46, 2, 82);
 }
 .nav-link:focus {
-    color: rgb(46, 2, 82);
-    outline: none;
+  color: rgb(46, 2, 82);
+  outline: none;
 }
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
 /* END Navbar */
 
-.text-header{
-    position: relative;
-    top: 5rem;
+.text-header {
+  position: relative;
+  top: 5rem;
 }
-.text-header h2{
-    font-size: 3em;
-    font-weight: bolder;
-    text-transform: uppercase;
+.text-header h2 {
+  font-size: 3em;
+  font-weight: bolder;
+  text-transform: uppercase;
 }
 
 /* End Header Content */
 
-
 .feature {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .feature .content {
-    width: 70%;
-    
+  width: 70%;
 }
 
 .feature .content span {
-    font-size: 4em;
-    padding: 15px;
-    text-align: center;
-    padding-bottom: 0px;
+  font-size: 4em;
+  padding: 15px;
+  text-align: center;
+  padding-bottom: 0px;
 }
 
 .feature .content h2 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 .feature .content .card {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid transparent;
-    border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid transparent;
+  border-radius: 5px;
 }
 /* End Feature Content */
 
-
-
-.projects{
-    margin-top: 4rem;
-    position: relative;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
+.projects {
+  margin-top: 4rem;
+  position: relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 
-.projects h3{
-    padding-top: 5rem;
+.projects h3 {
+  padding-top: 5rem;
 }
 
-.carousel-cell 
-{
-    width: 40%;
-
+.carousel-cell {
+  width: 40%;
 }
-.carousel 
-{
-    margin-bottom: 15rem;
+.carousel {
+  margin-bottom: 15rem;
 }
-.carousel-cell::before
-{
-    display: block;
+.carousel-cell::before {
+  display: block;
 }
 
 /* End Projects Content */
 
 .team {
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.team h3 
-{
-    text-transform: capitalize;
-    margin: 2rem 0px;
+.team h3 {
+  text-transform: capitalize;
+  margin: 2rem 0px;
 }
-.team h4 
-
-{
-    font-weight: bold;
+.team h4 {
+  font-weight: bold;
 }
 
 
+.social {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  width: 3%;
+  height: 100vh;
+}
+.social a i {
+  font-size: 1.6em;
+  margin-bottom: 1rem;
+}
+
+.social a {
+  color: rgb(46, 2, 82);
+}
+
+.social a :hover {
+  color: rgb(147, 56, 207);
+}
+.whatsapp {
+  background-color: transparent;
+  padding: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.whatsapp i {
+  font-size: 3em;
+}
+
+.whatsapp a {
+  color: rgb(46, 2, 82);
+}
+
+.whatsapp a:hover {
+  color: rgb(147, 56, 207);
+}
+
+.whatsapp h5 {
+    display: none;
+}
 /* End Team Content */
 @media screen and (max-width: 1024px) {
-    .content-2{
-        order: 1;
-    }
-    .content-1
-    {
-        order: 2;
-    }
-    .text-header
-    {
-        top: 0px;
-    }
-    .text-header h2 {
-        font-size: 2em;
-    }
-    .feature .content {
-        width: 95%;
-    }
-    .feature .content span{
-        text-align: center;
-    }
-    .feature .content hr {
-        display: block;
-    }
-    .feature .content .card{
-        margin-bottom: 1rem;
-    }
-    .feature .content div
-    {   
-        margin-top: 1rem;
-    }
-    .feature .content h2{
-        text-align: center;
-    }
-    .feature .content p {
-        text-align: center;
-    }
-    .carousel
-    {
-        margin-bottom: 10rem;
-    }
-    .carousel-cell
-    {
-        width: 80%;
-    }
+  .content-2 {
+    order: 1;
+  }
+  .content-1 {
+    order: 2;
+  }
+  .text-header {
+    top: 0px;
+  }
+  .text-header h2 {
+    font-size: 2em;
+  }
+  .feature .content {
+    width: 95%;
+  }
+  .feature .content span {
+    text-align: center;
+  }
+  .feature .content hr {
+    display: block;
+  }
+  .feature .content .card {
+    margin-bottom: 1rem;
+  }
+  .feature .content div {
+    margin-top: 1rem;
+  }
+  .feature .content h2 {
+    text-align: center;
+  }
+  .feature .content p {
+    text-align: center;
+  }
+  .carousel {
+    margin-bottom: 10rem;
+  }
+  .carousel-cell {
+    width: 80%;
+  }
 }
