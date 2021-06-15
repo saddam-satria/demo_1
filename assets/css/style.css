@@ -9,6 +9,8 @@ body {
 }
 p {
   text-align: justify;
+  text-transform: capitalize;
+
 }
 
 h1,
@@ -16,7 +18,8 @@ h2,
 h3,
 h4,
 h5 {
-  text-transform: capitalize;
+  text-transform: uppercase;
+  
 }
 .navbar {
   background-color: rgb(255, 255, 255);
@@ -83,6 +86,7 @@ h5 {
 
 .feature .content h2 {
   font-size: 1.5em;
+  text-transform: capitalize;
 }
 .feature .content .card {
   background-color: rgb(255, 255, 255);
@@ -116,19 +120,23 @@ h5 {
 /* End Projects Content */
 
 .team {
-  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .team h3 {
-  text-transform: capitalize;
   margin: 2rem 0px;
 }
 .team h4 {
   font-weight: bold;
 }
+.team h5 
 
+{
+  text-transform: capitalize;
+}
+
+/* End Team Content */
 
 .social {
   background-color: transparent;
@@ -175,7 +183,33 @@ h5 {
 .whatsapp h5 {
     display: none;
 }
-/* End Team Content */
+/* END Social Menu */
+
+.partner {
+  background-color: #ffffff;
+}
+.partner .card 
+{
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: rgb(243, 242, 247);
+  border-radius: 5px;
+}
+.partner span 
+{
+  font-size: 3em;
+  color: rgb(46, 2, 82);
+}
+
+.partner h2{
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* End Partner */
+
 @media screen and (max-width: 1024px) {
   .content-2 {
     order: 1;
@@ -216,4 +250,9 @@ h5 {
   .carousel-cell {
     width: 80%;
   }
+ .partner .card {
+   background-color: #ffffff;
+   border: none;
+ }
+ 
 }
