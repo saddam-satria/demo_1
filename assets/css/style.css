@@ -212,14 +212,7 @@ h5 {
 /* End Partner */
 
 
-.location
-{
-  background-color: #ffffff;
-  margin-top: 10rem;
-}
 
-
-/* location */
 @media screen and (max-width: 1024px) {
   .content-2 {
     order: 1;
